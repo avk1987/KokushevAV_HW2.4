@@ -13,6 +13,9 @@
 		8A484AB82411445500E05EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A484AB62411445500E05EC5 /* Main.storyboard */; };
 		8A484ABA2411445800E05EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A484AB92411445800E05EC5 /* Assets.xcassets */; };
 		8A484ABD2411445800E05EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A484ABB2411445800E05EC5 /* LaunchScreen.storyboard */; };
+		8A484AC52413A98100E05EC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A484AC42413A98100E05EC5 /* ProfileViewController.swift */; };
+		8A484ACD2413D83D00E05EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A484AC92413C12300E05EC5 /* User.swift */; };
+		8A484AEF24155E8000E05EC5 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A484AEE24155E8000E05EC5 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8A484AB92411445800E05EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A484ABC2411445800E05EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A484ABE2411445800E05EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A484AC42413A98100E05EC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8A484AC92413C12300E05EC5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A484AEE24155E8000E05EC5 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		8A484AAF2411445500E05EC5 /* KokushevAV_HW2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				8A484AB02411445500E05EC5 /* AppDelegate.swift */,
-				8A484AB22411445500E05EC5 /* SceneDelegate.swift */,
-				8A484AB42411445500E05EC5 /* ViewController.swift */,
-				8A484AB62411445500E05EC5 /* Main.storyboard */,
-				8A484AB92411445800E05EC5 /* Assets.xcassets */,
-				8A484ABB2411445800E05EC5 /* LaunchScreen.storyboard */,
-				8A484ABE2411445800E05EC5 /* Info.plist */,
+				8A484AC62413C0DE00E05EC5 /* Model */,
+				8A484AC72413C0ED00E05EC5 /* View */,
+				8A484ACC2413C2F800E05EC5 /* Storyboards */,
+				8A484ACB2413C29D00E05EC5 /* SupportingFiles */,
 			);
 			path = KokushevAV_HW2.4;
+			sourceTree = "<group>";
+		};
+		8A484AC62413C0DE00E05EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A484AC92413C12300E05EC5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A484AC72413C0ED00E05EC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A484AB42411445500E05EC5 /* ViewController.swift */,
+				8A484AC42413A98100E05EC5 /* ProfileViewController.swift */,
+				8A484AEE24155E8000E05EC5 /* AboutMeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A484ACB2413C29D00E05EC5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A484AB02411445500E05EC5 /* AppDelegate.swift */,
+				8A484AB22411445500E05EC5 /* SceneDelegate.swift */,
+				8A484AB92411445800E05EC5 /* Assets.xcassets */,
+				8A484ABE2411445800E05EC5 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8A484ACC2413C2F800E05EC5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A484AB62411445500E05EC5 /* Main.storyboard */,
+				8A484ABB2411445800E05EC5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +181,9 @@
 			files = (
 				8A484AB52411445500E05EC5 /* ViewController.swift in Sources */,
 				8A484AB12411445500E05EC5 /* AppDelegate.swift in Sources */,
+				8A484AC52413A98100E05EC5 /* ProfileViewController.swift in Sources */,
+				8A484ACD2413D83D00E05EC5 /* User.swift in Sources */,
+				8A484AEF24155E8000E05EC5 /* AboutMeViewController.swift in Sources */,
 				8A484AB32411445500E05EC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +330,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5W56XKGKMR;
-				INFOPLIST_FILE = KokushevAV_HW2.4/Info.plist;
+				INFOPLIST_FILE = KokushevAV_HW2.4/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +349,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5W56XKGKMR;
-				INFOPLIST_FILE = KokushevAV_HW2.4/Info.plist;
+				INFOPLIST_FILE = KokushevAV_HW2.4/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
